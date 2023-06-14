@@ -46,3 +46,23 @@ describe('Test Calculator', () => {
     expect(Math.round(Calculator.divide(20, 10))).toBe(2);
   });
 });
+
+/* ******* *
+ * Task 04 *
+ ********* */
+
+const capitalize = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+};
+
+describe('Test Capitalization', () => {
+  // Successfull
+  test('capitalize(hamid) should be Hamid)', () => {
+    expect(capitalize('hamid')).toBe('Hamid');
+  });
+
+  // Wrong
+  test('capitalize(hamid) should be Hamid)', () => {
+    expect(capitalize('hamid')).toBe('hamid');
+  });
+});
